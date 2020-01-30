@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
+using Microsoft.Ajax.Utilities;
 
 namespace CustomerLists.Models
 {
@@ -12,4 +14,6 @@ namespace CustomerLists.Models
         public String Synopsis { get; set; }
         public string Rating { get; set; }
     }
+
+    
 }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CustomerLists.Models
 {
-    public class Person
+    public class Customers
     {
         public int ID { get; set; }
         public String Name { get; set; }

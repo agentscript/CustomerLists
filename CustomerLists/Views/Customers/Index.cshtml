@@ -1,0 +1,12 @@
+﻿@model List<CustomerLists.Models.Customers>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Our Customers</h2>
+
+@foreach (var customer in Model)
+{
+    <h4> <a href="/details/@customer.ID">@customer.Name</a> </h4>
+}
