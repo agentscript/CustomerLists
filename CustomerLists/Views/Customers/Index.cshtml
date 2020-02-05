@@ -1,4 +1,4 @@
-﻿@model List<CustomerLists.Models.Customers>
+﻿@model List<CustomerLists.Models.Customer>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,5 +8,10 @@
 
 @foreach (var customer in Model)
 {
-    <h4> <a href="/details/@customer.ID">@customer.Name</a> </h4>
+    <h4> <a href="/details/@customer.ID">
+        @if (customer.Name != null)
+        {
+            @customer.Name
+        }
+    </a> </h4>
 }

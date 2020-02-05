@@ -211,10 +211,23 @@
     <Compile Include="Migrations\202001292341518_InitialM.designer.cs">
       <DependentUpon>202001292341518_InitialM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002052021526_AddMemnershipType.cs" />
+    <Compile Include="Migrations\202002052021526_AddMemnershipType.designer.cs">
+      <DependentUpon>202002052021526_AddMemnershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002052026043_poplatemembership.cs" />
+    <Compile Include="Migrations\202002052026043_poplatemembership.designer.cs">
+      <DependentUpon>202002052026043_poplatemembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002052034510_applyAnnotationtocustomer.cs" />
+    <Compile Include="Migrations\202002052034510_applyAnnotationtocustomer.designer.cs">
+      <DependentUpon>202002052034510_applyAnnotationtocustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movies.cs" />
-    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -255,6 +268,7 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -275,6 +289,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202001292341518_InitialM.resx">
       <DependentUpon>202001292341518_InitialM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002052021526_AddMemnershipType.resx">
+      <DependentUpon>202002052021526_AddMemnershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002052026043_poplatemembership.resx">
+      <DependentUpon>202002052026043_poplatemembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002052034510_applyAnnotationtocustomer.resx">
+      <DependentUpon>202002052034510_applyAnnotationtocustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

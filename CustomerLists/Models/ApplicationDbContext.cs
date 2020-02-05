@@ -12,7 +12,7 @@ namespace CustomerLists.Models
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Customers> _Customers { get; set; }
+        public DbSet<Customer> _Customers { get; set; }
         public DbSet<Movies> _Movies { get; set; }
 
         public ApplicationDbContext()
