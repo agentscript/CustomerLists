@@ -8,10 +8,5 @@
 
 @foreach (var customer in Model)
 {
-    <h4> <a href="/details/@customer.ID">
-        @if (customer.Name != null)
-        {
-            @customer.Name
-        }
-    </a> </h4>
+    @Html.ActionLink(customer.Name,"Details","Customers",new{id=customer.ID},null)
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -7,6 +8,7 @@ using System.Web.Mvc;
 using System.Web.WebSockets;
 using CustomerLists.Migrations;
 using CustomerLists.Models;
+
 
 namespace CustomerLists.Controllers
 {
@@ -31,6 +33,18 @@ namespace CustomerLists.Controllers
             var people = _context._Customers.ToList();
             return View(people);
         }
+
+        public ActionResult New()
+        {
+            
+            var memTypes = _context._MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = memTypes
+            };
+            return View(viewModel);
+        }
+
 
         [Route("customers/details/{id}")]
         public ActionResult Details(int id)
