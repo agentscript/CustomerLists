@@ -6,7 +6,23 @@
 
 <h2>Our Customers</h2>
 
-@foreach (var customer in Model)
-{
-    @Html.ActionLink(customer.Name,"Details","Customers",new{id=customer.ID},null)
-}
+<table class="table table-bordered table-hover">
+    <thead>
+    <th>Customer Name</th>
+    <th>Discount Rate</th>
+    <th>Edit Controls</th>
+    </thead>
+    <tbody>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td> @Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.ID }, null)</td>
+            <td> @customer.MembershipType.Name</td>
+            <td> @Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.ID }, null)</td>
+        </tr>
+    }
+    
+    </tbody>
+
+    
+</table>

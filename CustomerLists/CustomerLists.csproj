@@ -227,12 +227,43 @@
     <Compile Include="Migrations\202002062143168_addedSubscription.designer.cs">
       <DependentUpon>202002062143168_addedSubscription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002102242278_addedMemname.cs" />
+    <Compile Include="Migrations\202002102242278_addedMemname.designer.cs">
+      <DependentUpon>202002102242278_addedMemname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002102333184_GenreandMovies.cs" />
+    <Compile Include="Migrations\202002102333184_GenreandMovies.designer.cs">
+      <DependentUpon>202002102333184_GenreandMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002102346236_addGenreSee.cs" />
+    <Compile Include="Migrations\202002102346236_addGenreSee.designer.cs">
+      <DependentUpon>202002102346236_addGenreSee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002122328497_addmovies.cs" />
+    <Compile Include="Migrations\202002122328497_addmovies.designer.cs">
+      <DependentUpon>202002122328497_addmovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002182136139_AddedMovies.cs" />
+    <Compile Include="Migrations\202002182136139_AddedMovies.designer.cs">
+      <DependentUpon>202002182136139_AddedMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002242256237_addedGenreIF.cs" />
+    <Compile Include="Migrations\202002242256237_addedGenreIF.designer.cs">
+      <DependentUpon>202002242256237_addedGenreIF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002242354539_addedmigationstest.cs" />
+    <Compile Include="Migrations\202002242354539_addedmigationstest.designer.cs">
+      <DependentUpon>202002242354539_addedmigationstest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18.cs" />
     <Compile Include="Models\Movies.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\NewCustomerViewModel.cs" />
+    <Compile Include="Models\CustomerViewModel.cs" />
+    <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -274,7 +305,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Customers\New.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\Save.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -307,6 +339,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002062143168_addedSubscription.resx">
       <DependentUpon>202002062143168_addedSubscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002102242278_addedMemname.resx">
+      <DependentUpon>202002102242278_addedMemname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002102333184_GenreandMovies.resx">
+      <DependentUpon>202002102333184_GenreandMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002102346236_addGenreSee.resx">
+      <DependentUpon>202002102346236_addGenreSee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002122328497_addmovies.resx">
+      <DependentUpon>202002122328497_addmovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002182136139_AddedMovies.resx">
+      <DependentUpon>202002182136139_AddedMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002242256237_addedGenreIF.resx">
+      <DependentUpon>202002242256237_addedGenreIF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002242354539_addedmigationstest.resx">
+      <DependentUpon>202002242354539_addedmigationstest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

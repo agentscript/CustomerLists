@@ -15,6 +15,7 @@ namespace CustomerLists.Models
         public DbSet<Customer> _Customers { get; set; }
         public DbSet<Movies> _Movies { get; set; }
         public DbSet<MembershipType> _MembershipTypes { get; set; }
+        public DbSet<Genre> _Genre { get; set; }
 
         public ApplicationDbContext()
         {

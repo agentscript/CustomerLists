@@ -1,14 +1,34 @@
-﻿@model List<CustomerLists.Models.Movies>
+﻿@model IEnumerable<CustomerLists.Models.Movies>
    
 @{
     ViewBag.Title = "List of All Movies";
 }
 
-<h2>All Movies</h2>
+<h2>All Moviess</h2>
 
 <br />
 
-@foreach (var Movie in Model)
-{ 
-    <h4> <a href="movies/details/@Movie.ID">@Movie.MovieName</a> </h4>               
-}
+<a href="Movies/New">Add New Moviess</a>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Genre</td>
+            <td>Edit</td>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var movie in @Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(movie.MovieName, "Details", "Movies", new { id = movie.ID }, null)</td>
+            <td>@movie.Genre.Name</td>
+            <td> @Html.ActionLink("Edit", "Edit", "Movies", new { id = movie.ID }, null)</td>
+        </tr>
+      
+    }
+    </tbody>
+</table>
+
+
